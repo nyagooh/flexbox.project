@@ -9,7 +9,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 100vh;
     
 }
 .pricing-plan{
@@ -22,6 +22,11 @@ body{
     font-weight: bold;
     font-size: 48px;
 }
+ img{
+    width: 100px;
+    height: 100px;
+ }
+ 
 .plan-title{
     font-weight: bolder;
     margin-bottom: 10px;
@@ -47,8 +52,23 @@ body{
     color: white;
     background-color:#AC7088 ;
 }
-@media (max-width:400px) {
+.plan-button:hover{
+    background: #8B1874;
+    color: #fff;
+}
+footer{
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 200px;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    background-color: #DEB6AB;
+}
+@media (max-width:1250px) {
     .pricing-container{
+        flex-direction: column;
+        height: 100%;
         background-color: #B71375;
     }
 }
